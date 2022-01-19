@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    /* ## Colors
+    ### Primary
+    #### Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* ####Gradient
+    Background gradient: */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* ### Neutral
+    #### Text */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* #### Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+h1{
+    font-size: 3em;
+    color: var(--Very-dark-desaturated-blue);
+}
+p{
+    font-size: 1em;
+    color: var(--Dark-grayish-blue);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+}
+
+.wrapper{
+    background-color: white;
+    margin-top: 250px;
+    border-radius: 30px;
+    min-width: 1440;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    min-height: 400px;
+}
+
+.images{
+    width: 50%;
+}
+.bg_pattern{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: -410px -200px;
+}
+.illustration-woman{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -60px;
+
+}
+.box{
+    /* background-image: url(images/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: -100px -100px; */
+    position: relative;
+    top: -230px;
+    left: -390px;
+}
+
+.box img{
+    width: 70%;
+}
+.faq{
+    width: 50%;
+    margin: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.info > *:not(:first-child){
+    margin-top: 30px;
+}
+.question{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answer{
+    display: none;
+}

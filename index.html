@@ -29,11 +29,13 @@
         <h1>FAQ</h1>
         <div class="info">
           <div class="invite">
-            <div class="question">
-              <p>How many team members can I invite? </p>
-              <div class="arrow"> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></div>
+            <div class="question" id="question_invite">
+              <p onclick="aparecer('p_invite' , 'answer_invite', 'arrow_invite')" id="p_invite">How many team members can I invite? </p>
+              <div class="arrow"> 
+                <img id="arrow_invite" src="images/icon-arrow-down.svg"alt="icon-arrow-down">
+              </div>
             </div>
-            <div class="answer">
+            <div class="answer" id="answer_invite">
               <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
                 team members for the Premium plan.</p>
             </div>
@@ -44,7 +46,7 @@
               <p>What is the maximum file upload size?</p>
               <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
-            <div class="answer">
+            <div class="answer" id="size">
               <p>
                 No more than 2GB. All files in your account must fit your allotted storage space.
               </p>
@@ -57,7 +59,7 @@
               <p>How do I reset my password?</p>
               <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
-            <div class="answer">
+            <div class="answer" id="password">
               <p>
                 Click “Forgot password” from the login page or “Change password” from your profile page.
                 A reset link will be emailed to you.
@@ -66,11 +68,11 @@
           </div>
   
           <div class="subscription">          
-            <div class="question">
+            <div class="question" id="question_subscription">
               <p>Can I cancel my subscription?</p>
               <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
-            <div class="answer">
+            <div class="answer" id="answer_subscription">
               <p>
                 Yes! Send us a message and we’ll process your request no questions asked.
               </p>
@@ -78,21 +80,18 @@
           </div>
   
           <div class="support">
-            
-  
             <div class="question">
               <p>
                 Do you provide additional support?
               </p>
               <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
-            <div class="answer">
+            <div class="answer" id="support">
               <p>
                 Chat and email support is available 24/7. Phone lines are open during normal business hours.
               </p>
             </div>  
           </div>
-
         </div>
       </div>
     </div>    
@@ -105,5 +104,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Lucas Silva</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

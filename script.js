@@ -1,9 +1,15 @@
 var p_selecionado;
 function aparecer(id_question, id_answer, id_arrow){
-    let largura = window.screen.width;
-    if(largura > 700){
-        $('.box').animate({left: '-410px'});
-    }
+    // let largura = window.screen.width;
+    // if(largura > 700){
+    //     // $('.box').animate({left: '-410px'});
+    //     $('.active').hover(function(){
+    //         $('.box').animate({left: '-410px'});
+    //     }, function(){
+    //         $('.box').animate({left: '-380px'});
+    //     })
+        
+    // }
   
     var teste = document.getElementsByClassName('answer');
     var teste_arrow = document.getElementsByClassName('arrow');
@@ -32,10 +38,17 @@ function aparecer(id_question, id_answer, id_arrow){
 
 }
 
-// while(1){
-//     let largura = window.screen.width;
-//     console.log(largura);
-// }
+function animation(){
+    let largura = window.screen.width;
+    if(largura > 700){
+        // $('.box').animate({left: '-410px'});
+        $('.active').hover(function(){
+            $('.box').animate({left: '-410px'});
+        }, function(){
+            $('.box').animate({left: '-380px'});
+        })      
+    }
+}
 
 $('.active').hover(function(){
         $(this).css('color', '#f47c57');

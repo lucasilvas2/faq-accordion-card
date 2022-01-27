@@ -16,7 +16,7 @@
   </style> -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="animation()">
   <div class="wrapper">
     <div class="card">
       <div class="images">
@@ -32,7 +32,7 @@
         <div class="info">
           <div class="invite">
             <div class="question" id="question_invite">
-              <p onclick="aparecer('p_invite' , 'answer_invite', 'arrow_invite')" id="p_invite" class="p active">How many team members can I invite? </p>              
+              <p onclick="aparecer('p_invite' , 'answer_invite', 'arrow_invite')" id="p_invite" class="p active" onmouseover="movimento()">How many team members can I invite? </p>              
               <img  class="arrow" id="arrow_invite" src="images/icon-arrow-down.svg"alt="icon-arrow-down">             
             </div>
             <div class="answer" id="answer_invite">

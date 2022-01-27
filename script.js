@@ -1,11 +1,10 @@
 var p_selecionado;
 function aparecer(id_question, id_answer, id_arrow){
     let largura = window.screen.width;
-    console.log(largura);
     if(largura > 700){
-        $('.box').animate({left: '-400px'});
+        $('.box').animate({left: '-410px'});
     }
-     
+  
     var teste = document.getElementsByClassName('answer');
     var teste_arrow = document.getElementsByClassName('arrow');
     var teste_p = document.getElementsByClassName('p');

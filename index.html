@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -31,7 +32,7 @@
         <div class="info">
           <div class="invite">
             <div class="question" id="question_invite">
-              <p onclick="aparecer('p_invite' , 'answer_invite', 'arrow_invite')" id="p_invite" class="p">How many team members can I invite? </p>              
+              <p onclick="aparecer('p_invite' , 'answer_invite', 'arrow_invite')" id="p_invite" class="p active">How many team members can I invite? </p>              
               <img  class="arrow" id="arrow_invite" src="images/icon-arrow-down.svg"alt="icon-arrow-down">             
             </div>
             <div class="answer" id="answer_invite">
@@ -42,7 +43,7 @@
   
           <div class="size">                   
             <div class="question" id="question_size">
-              <p onclick="aparecer('p_size' , 'answer_size', 'arrow_size')" id="p_size" class="p">What is the maximum file upload size?</p>
+              <p onclick="aparecer('p_size' , 'answer_size', 'arrow_size')" id="p_size" class="p  active">What is the maximum file upload size?</p>
               <img class="arrow" id="arrow_size" src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
             <div class="answer" id="answer_size">
@@ -54,7 +55,7 @@
   
           <div class="password">            
             <div class="question">
-              <p onclick="aparecer('p_password' , 'answer_password', 'arrow_password')" id="p_password" class="p">How do I reset my password?</p>
+              <p onclick="aparecer('p_password' , 'answer_password', 'arrow_password')" id="p_password" class="p active">How do I reset my password?</p>
               <img class="arrow" id="arrow_password" src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
             <div class="answer" id="answer_password">
@@ -67,7 +68,7 @@
   
           <div class="subscription">          
             <div class="question" id="question_subscription">
-              <p onclick="aparecer('p_subscription' , 'answer_subscription', 'arrow_subscription')" id="p_subscription" class="p">Can I cancel my subscription?</p>
+              <p onclick="aparecer('p_subscription' , 'answer_subscription', 'arrow_subscription')" id="p_subscription" class="p active">Can I cancel my subscription?</p>
               <img class="arrow" id="arrow_subscription" src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 
             </div>
             <div class="answer" id="answer_subscription">
@@ -79,7 +80,7 @@
   
           <div class="support">
             <div class="question">
-              <p onclick="aparecer('p_support' , 'answer_support', 'arrow_support')" id="p_support" class="p">
+              <p onclick="aparecer('p_support' , 'answer_support', 'arrow_support')" id="p_support" class="p active">
                 Do you provide additional support?
               </p>
               <img class="arrow" id="arrow_support" src="images/icon-arrow-down.svg" alt="icon-arrow-down"> 

@@ -1,7 +1,11 @@
 var p_selecionado;
 function aparecer(id_question, id_answer, id_arrow){
-    $('.box').animate({left: '-400px'});
-    
+    let largura = window.screen.width;
+    console.log(largura);
+    if(largura > 700){
+        $('.box').animate({left: '-400px'});
+    }
+     
     var teste = document.getElementsByClassName('answer');
     var teste_arrow = document.getElementsByClassName('arrow');
     var teste_p = document.getElementsByClassName('p');
@@ -29,6 +33,10 @@ function aparecer(id_question, id_answer, id_arrow){
 
 }
 
+// while(1){
+//     let largura = window.screen.width;
+//     console.log(largura);
+// }
 
 $('.active').hover(function(){
         $(this).css('color', '#f47c57');

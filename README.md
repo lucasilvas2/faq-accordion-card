@@ -41,7 +41,7 @@ Users should be able to:
 - Jquery
 ## Author
 
-- Website - [https://github.com/lucasilvas2]
+- Website - [GIT](https://github.com/lucasilvas2)
 - Frontend Mentor - [@lucasilvas2]
 
 
